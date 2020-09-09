@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -75,6 +76,11 @@ main section.pizzas  {
     box-shadow: 0 0 10px #666;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+main section.pizzas:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 main section#apresentacao img {
