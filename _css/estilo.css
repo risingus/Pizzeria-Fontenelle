@@ -67,9 +67,8 @@ main section#apresentacao {
     margin: 100px auto;
 }
 
-main section.pizzas {
+main section.pizzas  {
     font-family: Roboto, sans-serif;
-
     width: 30%;
     float: left;
     background-color: #FFF;
@@ -78,22 +77,21 @@ main section.pizzas {
     margin-bottom: 10px;
 }
 
-main section.pizzas img {
+main section#apresentacao img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     object-position: top center;
-
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-main section.pizzas h3 {
+main section#apresentacao h3 {
     text-align: center;
     margin-bottom: 0;
 }
 
-main section.pizzas p {
+main section#apresentacao p {
     text-align: center; 
     padding: 5%;
     margin-top: 1%;
@@ -101,14 +99,13 @@ main section.pizzas p {
     font-size: 90%;
 }
 
-main section.pizzas a {
+main section#apresentacao a {
     display: block;
     text-align: center; 
     background-color: forestgreen;
     color:white;
     padding:3%;
     text-decoration: none;
-
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }            
