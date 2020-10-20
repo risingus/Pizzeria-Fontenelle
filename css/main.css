@@ -124,6 +124,7 @@ section .pizzas h3 {
   color: white;
   text-align: center;
   text-shadow: 0 2px 0 black;
+  max-width: 100%;
 }
 
 section .pizzas p {

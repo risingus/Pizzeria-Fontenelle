@@ -112,6 +112,7 @@ section .pizzas{
         color: $primary-text-color;
         text-align: center;
         text-shadow: 0 2px 0 $hover-li-text-color;
+        max-width: 100%;
     }
 
     p{
