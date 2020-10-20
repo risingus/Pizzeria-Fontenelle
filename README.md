@@ -1,3 +1,4 @@
+ <img src="https://github.com/risingus/Site.pizzaria.io/blob/master/img/readme.png" alt="project preview">
  <h1>💻 Project </h1>
  <p>Project coded during CSS starting course. Just an initial page from a pizzeria </p>
  
