@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+a, p, h1, h3 {
+  font-family: Roboto, sans-serif;
+}
+
 .navbar {
   padding-bottom: 1rem;
   background: red;
@@ -25,6 +29,15 @@
   margin-top: 2rem;
 }
 
+.navbar .menu li a {
+  padding: 0.8px;
+  border-radius: .2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
 .menu {
   display: none;
 }
@@ -40,14 +53,6 @@
 
 .active {
   display: block;
-}
-
-.menu li a {
-  padding: 0.8px;
-  border-radius: .2rem;
-  text-decoration: none;
-  font-size: 2rem;
-  color: white;
 }
 
 header {
@@ -89,6 +94,7 @@ section .pizzas {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 section .pizzas img {
@@ -128,20 +134,20 @@ section .pizzas a {
   border-radius: 0.4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 860px) {
   section .pizzas p {
     max-width: 40rem;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 861px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-bottom: 0;
     height: 70px;
     -webkit-box-align: center;
@@ -170,12 +176,60 @@ section .pizzas a {
   .menu-links {
     margin-left: 40px;
   }
-  .mavbar .logo {
-    margin-top: .1rem;
-    width: 5rem;
+  .navbar li a:hover {
+    color: black;
+  }
+  .navbar .logo {
+    margin-top: 1rem;
+    width: 7rem;
   }
   .navbar-toggle {
     display: none;
+  }
+  h1 {
+    font-size: 2rem;
+    height: 4rem;
+  }
+  #apresentacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 70rem;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #apresentacao .pizzas {
+    max-width: 20rem;
+    height: 35rem;
+  }
+  #apresentacao .pizzas img {
+    max-width: 20rem;
+  }
+  #apresentacao h3 {
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 3rem;
+  }
+  #apresentacao .pizzas p {
+    height: 9rem;
+  }
+  #apresentacao .pizzas a {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

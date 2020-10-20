@@ -8,6 +8,10 @@ $primary-text-color:white;
     -webkit-font-smoothing: antialiased;
 }
 
+a, p, h1, h3 {
+    font-family: Roboto, sans-serif;
+}
+
 .navbar{
     padding-bottom: 1rem;
     background: $navbar-color;
@@ -24,9 +28,18 @@ $primary-text-color:white;
         list-style: none;
         text-align: center;
         margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-top: 2rem;   
         
+        a{
+            padding: 0.8px;
+            border-radius: .2rem;
+            text-decoration: none;
+            font-size: 1rem;
+            color: $primary-text-color; 
+            font-weight: bold;
+        }
 }
+
 }
 
 .menu{
@@ -47,14 +60,7 @@ $primary-text-color:white;
 }
 
 
-.menu li a{
-    padding: 0.8px;
-    border-radius: .2rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: $primary-text-color;
-    
-}
+
 
 
 header{
@@ -84,6 +90,7 @@ section .pizzas{
     justify-items: center;
     align-items: center;  
     margin-bottom: 2rem;
+    text-align: center;
     
     img{
         width: 100%;
@@ -117,16 +124,16 @@ section .pizzas{
     }
 }
 
-@media only screen  and (min-width:768px) {
+@media only screen  and (max-width:860px) {
     section .pizzas p{
         max-width: 40rem;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 861px) {
     .navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding-bottom: 0;
         height: 70px;
         align-items: center;
@@ -138,22 +145,108 @@ section .pizzas{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-    }
 
-    .menu li {
-        margin: 0;
+        li {
+            margin: 0; 
+            }
+        
     }
 
     .menu-links{
         margin-left: 40px;
     }
+
+    .navbar li a:hover{
+        color: black;
+    }
   
-    .mavbar .logo {
-        margin-top: .1rem;
-        width: 5rem;
+    .navbar .logo {
+        margin-top: 1rem;
+        width: 7rem;
     }
     .navbar-toggle {
         display: none;
     }
+
+    h1{
+        font-size: 2rem;
+        height: 4rem;
+    }
+
+    #apresentacao{
+        display: flex;
+        flex-direction: row;
+        align-items: top;        
+        flex-wrap: wrap;
+        max-width: 70rem;
+        margin-top: 1rem;
+        text-align: center;
+        justify-content: space-evenly;
+
+        .pizzas{
+            max-width: 20rem;
+            height: 35rem;     
+
+            img {
+                max-width: 20rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            width: 20rem;
+            height: 3rem;
+        }
+
+        .pizzas p{
+            height: 9rem;
+        }
+
+        .pizzas a{
+            justify-content: end;
+            margin-top: 0;
+        }
+
+    }
+
+    // section .pizzas{
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-items: center;
+    //     align-items: center;  
+    //     margin-bottom: 2rem;
+        
+    //     img{
+    //         width: 50%;
+    //     } 
+    
+    //     h3{
+    //         font-size: 3rem;
+    //         background: $navbar-color;
+    //         width: 100vw;
+    //         justify-content: center;
+    //         display: flex;
+    //         height: 8rem;
+    //         align-items: center;
+    //         color: $primary-text-color;
+    //         text-align: center;
+    //     }
+    
+    //     p{
+    //         font-size: 1.5rem;
+    //         max-width: 20rem;
+    //         margin: 2rem auto;
+    //     }
+    
+    //     a{
+    //         font-size: 1.5rem;
+    //         text-decoration: none;
+    //         color: $primary-text-color;
+    //         background: $navbar-color;
+    //         padding: 1.5rem;
+    //         border-radius: 0.4rem;
+    //     }
+    // }
+    
         
 }
