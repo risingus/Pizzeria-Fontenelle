@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background: #FAFAFA;
+}
+
 a, p, h1, h3 {
   font-family: Roboto, sans-serif;
 }
@@ -36,6 +40,7 @@ a, p, h1, h3 {
   font-size: 1rem;
   color: white;
   font-weight: bold;
+  letter-spacing: 0.12rem;
 }
 
 .menu {
@@ -79,6 +84,7 @@ h1 {
   color: white;
   font-size: 2rem;
   text-align: center;
+  text-shadow: 0 2px 0 black;
 }
 
 section .pizzas {
@@ -117,6 +123,7 @@ section .pizzas h3 {
           align-items: center;
   color: white;
   text-align: center;
+  text-shadow: 0 2px 0 black;
 }
 
 section .pizzas p {
@@ -190,6 +197,7 @@ section .pizzas a {
   h1 {
     font-size: 2rem;
     height: 4rem;
+    margin-bottom: 2rem;
   }
   #apresentacao {
     display: -webkit-box;
@@ -204,7 +212,7 @@ section .pizzas a {
             align-items: top;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 70rem;
+    max-width: 80rem;
     margin-top: 1rem;
     text-align: center;
     -webkit-box-pack: space-evenly;
@@ -212,19 +220,30 @@ section .pizzas a {
             justify-content: space-evenly;
   }
   #apresentacao .pizzas {
-    max-width: 20rem;
-    height: 35rem;
+    max-width: 26rem;
+    height: 31rem;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 0.4rem;
+  }
+  #apresentacao .pizzas:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   #apresentacao .pizzas img {
-    max-width: 20rem;
+    max-width: 25rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
   }
   #apresentacao h3 {
     font-size: 1.5rem;
-    width: 20rem;
+    width: 25rem;
     height: 3rem;
   }
   #apresentacao .pizzas p {
-    height: 9rem;
+    height: 4rem;
   }
   #apresentacao .pizzas a {
     -webkit-box-pack: end;

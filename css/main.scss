@@ -1,11 +1,17 @@
 $navbar-color: red;
 $primary-text-color:white;
+$hover-li-text-color:black;
+$background-color: #FAFAFA;
 
 * {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background: $background-color;
 }
 
 a, p, h1, h3 {
@@ -37,6 +43,7 @@ a, p, h1, h3 {
             font-size: 1rem;
             color: $primary-text-color; 
             font-weight: bold;
+            letter-spacing: 0.12rem;
         }
 }
 
@@ -81,6 +88,7 @@ h1{
     color: $primary-text-color;
     font-size: 2rem;
     text-align: center;
+    text-shadow: 0 2px 0 $hover-li-text-color;
 }
 
 
@@ -106,6 +114,7 @@ section .pizzas{
         align-items: center;
         color: $primary-text-color;
         text-align: center;
+        text-shadow: 0 2px 0 $hover-li-text-color;
     }
 
     p{
@@ -159,7 +168,7 @@ section .pizzas{
     }
 
     .navbar li a:hover{
-        color: black;
+        color: $hover-li-text-color;
     }
   
     .navbar .logo {
@@ -173,6 +182,9 @@ section .pizzas{
     h1{
         font-size: 2rem;
         height: 4rem;
+        margin-bottom: 2rem;
+        
+        
     }
 
     #apresentacao{
@@ -180,28 +192,38 @@ section .pizzas{
         flex-direction: row;
         align-items: top;        
         flex-wrap: wrap;
-        max-width: 70rem;
+        max-width: 80rem;
         margin-top: 1rem;
         text-align: center;
         justify-content: space-evenly;
 
         .pizzas{
-            max-width: 20rem;
-            height: 35rem;     
+            max-width: 26rem;
+            height: 31rem;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+            border-radius: 0.4rem;
+                   
+            &:hover{
+                transition: 0.2s;
+                transform: scale(1.03);
+            }
 
             img {
-                max-width: 20rem;
+                max-width: 25rem;
+                border-top-left-radius: 0.4rem;
+                border-top-right-radius: 0.4rem;
             }
         }
 
         h3 {
             font-size: 1.5rem;
-            width: 20rem;
+            width: 25rem;
             height: 3rem;
+            
         }
 
         .pizzas p{
-            height: 9rem;
+            height: 4rem;
         }
 
         .pizzas a{
