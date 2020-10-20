@@ -97,12 +97,12 @@ section .pizzas{
     } 
 
     h3{
-        font-size: 3rem;
+        font-size: 2rem;
         background: $navbar-color;
         width: 100vw;
         justify-content: center;
         display: flex;
-        height: 8rem;
+        height: 6rem;
         align-items: center;
         color: $primary-text-color;
         text-align: center;
@@ -120,7 +120,8 @@ section .pizzas{
         color: $primary-text-color;
         background: $navbar-color;
         padding: 1.5rem;
-        border-radius: 0.4rem;
+        margin: 0.3rem;
+
     }
 }
 
