@@ -1,0 +1,159 @@
+$navbar-color: red;
+$primary-text-color:white;
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar{
+    padding-bottom: 1rem;
+    background: $navbar-color;
+
+     .logo{
+        width: 10rem;
+        margin-left: 1rem;
+        display: inline-block;
+        margin-top: 0.5rem;
+
+    }
+
+    .menu li {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        
+}
+}
+
+.menu{
+    display: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: $primary-text-color;
+}
+
+.active {
+    display: block;
+}
+
+
+.menu li a{
+    padding: 0.8px;
+    border-radius: .2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $primary-text-color;
+    
+}
+
+
+header{
+    background-image: url(../img/foto-capa-pizza.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+h1{
+    width: 100%;
+    background: $navbar-color;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-text-color;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+section .pizzas{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+    margin-bottom: 2rem;
+    
+    img{
+        width: 100%;
+    } 
+
+    h3{
+        font-size: 3rem;
+        background: $navbar-color;
+        width: 100vw;
+        justify-content: center;
+        display: flex;
+        height: 8rem;
+        align-items: center;
+        color: $primary-text-color;
+        text-align: center;
+    }
+
+    p{
+        font-size: 1.5rem;
+        max-width: 20rem;
+        margin: 2rem auto;
+    }
+
+    a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $primary-text-color;
+        background: $navbar-color;
+        padding: 1.5rem;
+        border-radius: 0.4rem;
+    }
+}
+
+@media only screen  and (min-width:768px) {
+    section .pizzas p{
+        max-width: 40rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .menu-links{
+        margin-left: 40px;
+    }
+  
+    .mavbar .logo {
+        margin-top: .1rem;
+        width: 5rem;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+        
+}

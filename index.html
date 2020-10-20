@@ -4,42 +4,31 @@
         <title>Pizzaria Fontenelle</title>
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
-        <link href="css/estilo.css"            rel="stylesheet"/>
-        <link href="css/mobile.css"            rel="stylesheet" media="screen and (min-width:300px) and (max-width:700px)">
-        <link href="css/desktop-grande.css"    rel="stylesheet">
+        <link href="css/main.css"            rel="stylesheet"/>
     </head>
-    <body>      
-        <nav>
-            <img src="img/logo-pizzaria-grande.png">
-            <ul id="menu-desktop">
-                <li><a href="">PIZZAS</a></li>
-                <li><a href="">MEUS PEDIDOS</a></li>
-                <li><a href="">CONTATO</a></li>
-                <li><a href="">LOGIN</a></li>
-            </ul> 
-            
-            <ul id="menu-mobile">
-                <li><a href="">PIZZAS</a></li>
-                <li><a href="">MEUS PEDIDOS</a></li>
-                <li><a href="">CONTATO</a></li>
-                <li><a href="">LOGIN</a></li>
-            </ul> 
-            
-            <div id="menu-btn">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
-                    <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
-                    <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
-                </svg>
-            </div>            
-        </nav>
+    <body>
         
+        
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="img/logo-pizzaria-grande.png" alt="Logo Pizzaria Fontenelle" class="logo">
+                <ul class="menu" id="js-menu">
+                    <li><a href="" class="menu-links">Investimentos</a></li>
+                    <li><a href="" class="menu-links">Serviços</a></li>
+                    <li><a href="" class="menu-links">Contato</a></li>
+                    <li><a href="" class="menu-links">Cadastre-se</a></li>
+                </ul>
+        </nav>
+       
         <header>
            
         </header>
         
         <main>
+
+            <h1>Escolha sua pizza</h1>
             <section id="apresentacao">
                 <section class="pizzas">
                     <img src="img/pizza1.jpg">
@@ -48,36 +37,45 @@
                     <a href="">APENAS R$ 29,99</a>
                 </section>
 
-                <section class="pizzas centro">
+                <section class="pizzas">
                     <img src="img/pizza2.jpg">
                     <h3>Calabresa</h3>
                     <p>A conhecida pizza deliciosa de calabresa, com mozarela e uma pitada de orégano.</p>
                     <a href="">APENAS R$ 29,99</a>                    
                 </section>
 
-                <section class="pizzas direita">
+                <section class="pizzas">
                     <img src="img/pizza4.jpg">
                     <h3>Brasileira</h3>
                     <p>Gostinho brasileiro, leva pimentão, tomate, cebola, presunto, mozarela e azeitona.</p>
                     <a href="">APENAS R$ 29,99</a>                
-                </section>                
+                </section>
+                
+                <section class="pizzas">
+                    <img src="img/pizza7.jpg">
+                    <h3>Lombinho Canadense</h3>
+                    <p>Sabor suave e irresistível. Fatias deliciosas de Lombinho Canadense defumado, molho, queijo muçarela, azeitonas e orégano.</p>
+                    <a href="">APENAS R$ 29,99</a>                
+                </section>
+
+                <section class="pizzas">
+                    <img src="img/pizza9.jpg">
+                    <h3>4 queijos</h3>
+                    <p>A Pizza 4 Queijos é saborosa pois é coberta com os deliciosos queijos gorgonzola, parmesão, provolone e mussarela. A massa é fermentada de forma traducional e assada em forno de pedra, ficando no ponto certo: macia por dentro e crocante por fora!</p>
+                    <a href="">APENAS R$ 29,99</a>                
+                </section> 
             </section>
         </main>        
         
-        <script src="js/jquery.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
         <script>
-            $(function() {
-                $("div#menu-btn").click(function() {
-                    $("nav ul#menu-mobile").toggle();
-                });
-                
-                $(window).resize(function() {
-                   var largura = $(window).width(); 
-                    if ( largura >= 701 ) {
-                        $("nav ul#menu-mobile").hide();   
-                    }
-                });
-            });
+            let mainNav = document.getElementById("js-menu")
+            let navBarToggle = document.getElementById("js-navbar-toggle")
+        
+            navBarToggle.addEventListener("click", function(){
+            mainNav.classList.toggle("active")
+        })
         </script>
     </body>
 </html>
