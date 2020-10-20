@@ -67,9 +67,6 @@ a, p, h1, h3 {
 }
 
 
-
-
-
 header{
     background-image: url(../img/foto-capa-pizza.jpg);
     height: 50rem;
@@ -133,6 +130,14 @@ section .pizzas{
         border-radius: 0.4rem;
 
     }
+}
+
+footer {
+    height: 1.5rem;
+    color: $primary-text-color;
+    background: $navbar-color;
+    font-size: 1rem;
+    text-align: center;
 }
 
 @media only screen  and (max-width:860px) {
