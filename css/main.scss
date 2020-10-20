@@ -74,12 +74,12 @@ header{
 h1{
     width: 100%;
     background: $navbar-color;
-    height: 8rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $primary-text-color;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -97,30 +97,31 @@ section .pizzas{
     } 
 
     h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
         background: $navbar-color;
         width: 100vw;
         justify-content: center;
         display: flex;
-        height: 6rem;
+        height: 3rem;
         align-items: center;
         color: $primary-text-color;
         text-align: center;
     }
 
     p{
-        font-size: 1.5rem;
-        max-width: 20rem;
+        font-size: 1rem;
+        max-width: 18rem;
         margin: 2rem auto;
     }
 
     a{
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-decoration: none;
         color: $primary-text-color;
         background: $navbar-color;
-        padding: 1.5rem;
+        padding: 0.8rem;
         margin: 0.3rem;
+        border-radius: 0.4rem;
 
     }
 }
@@ -210,44 +211,6 @@ section .pizzas{
 
     }
 
-    // section .pizzas{
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-items: center;
-    //     align-items: center;  
-    //     margin-bottom: 2rem;
-        
-    //     img{
-    //         width: 50%;
-    //     } 
-    
-    //     h3{
-    //         font-size: 3rem;
-    //         background: $navbar-color;
-    //         width: 100vw;
-    //         justify-content: center;
-    //         display: flex;
-    //         height: 8rem;
-    //         align-items: center;
-    //         color: $primary-text-color;
-    //         text-align: center;
-    //     }
-    
-    //     p{
-    //         font-size: 1.5rem;
-    //         max-width: 20rem;
-    //         margin: 2rem auto;
-    //     }
-    
-    //     a{
-    //         font-size: 1.5rem;
-    //         text-decoration: none;
-    //         color: $primary-text-color;
-    //         background: $navbar-color;
-    //         padding: 1.5rem;
-    //         border-radius: 0.4rem;
-    //     }
-    // }
-    
-        
 }
+        
+
