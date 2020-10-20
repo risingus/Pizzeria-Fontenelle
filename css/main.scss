@@ -1,6 +1,6 @@
 $navbar-color: red;
 $primary-text-color:white;
-$hover-li-text-color:black;
+$text-shadow:black;
 $background-color: #FAFAFA;
 
 * {
@@ -37,7 +37,7 @@ a, p, h1, h3 {
         margin-top: 2rem;   
         
         a{
-            padding: 0.8px;
+            padding: 8px;
             border-radius: .2rem;
             text-decoration: none;
             font-size: 1rem;
@@ -85,7 +85,7 @@ h1{
     color: $primary-text-color;
     font-size: 2rem;
     text-align: center;
-    text-shadow: 0 2px 0 $hover-li-text-color;
+    text-shadow: 0 2px 0 $text-shadow;
 }
 
 
@@ -111,7 +111,7 @@ section .pizzas{
         align-items: center;
         color: $primary-text-color;
         text-align: center;
-        text-shadow: 0 2px 0 $hover-li-text-color;
+        text-shadow: 0 2px 0 $text-shadow;
         max-width: 100%;
     }
 
@@ -174,7 +174,9 @@ footer {
     }
 
     .navbar li a:hover{
-        color: $hover-li-text-color;
+        color: $navbar-color;
+        background: $primary-text-color;
+        transition: 0.2s;
     }
   
     .navbar .logo {

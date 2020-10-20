@@ -34,7 +34,7 @@ a, p, h1, h3 {
 }
 
 .navbar .menu li a {
-  padding: 0.8px;
+  padding: 8px;
   border-radius: .2rem;
   text-decoration: none;
   font-size: 1rem;
@@ -194,7 +194,10 @@ footer {
     margin-left: 40px;
   }
   .navbar li a:hover {
-    color: black;
+    color: red;
+    background: white;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .navbar .logo {
     margin-top: 1rem;
